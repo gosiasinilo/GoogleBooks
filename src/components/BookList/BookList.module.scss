@@ -1,0 +1,15 @@
+@use "../../sass/typography" as *;
+@use "../../sass/variables" as *;
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2em;
+  gap: 1em;
+  justify-content: center;
+}
+.text {
+  font-family: $text;
+  text-align: center;
+}

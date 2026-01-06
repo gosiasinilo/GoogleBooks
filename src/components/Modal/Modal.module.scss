@@ -1,0 +1,42 @@
+@use "../../sass/typography" as *;
+@use "../../sass/variables" as *;
+
+.overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  z-index: 1000;
+  padding: 2em;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid $brand-light-orange;
+  padding: 2em;
+  max-width: 400px;
+  width: 80%;
+  position: relative;
+  color: $white;
+  margin: 0 auto;
+}
+
+.button {
+  position: sticky;
+  top: 0.5em;
+  right: 0.5em;
+  font-size: 1.5em;
+  color: $brand-light-orange;
+  cursor: pointer;
+  z-index: 100;
+}
+.content {
+  margin-top: 1em;
+}
